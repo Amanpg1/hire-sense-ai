@@ -1,0 +1,12 @@
+- name: Check Minikube Status
+  shell: |
+    minikube status
+    kubectl cluster-info
+
+- name: Wait For Kubernetes
+  pause:
+    seconds: 20
+
+- name: Deploy Kubernetes Resources
+  shell: |
+    kubectl apply -f ../k8s/

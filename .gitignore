@@ -1,0 +1,22 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+_pycache_/
+
+# Build files
+dist/
+build/
+.next/
+
+# System files
+.DS_Store
+Thumbs.db
